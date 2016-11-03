@@ -1,0 +1,38 @@
+{
+  "name": "grnrbt/yii2-beanstalk-task-manager",
+  "description": "Yii2 task manager component uses beanstalk",
+  "version":"0.1.0",
+  "keywords": [
+    "yii2",
+    "task manager",
+    "beanstalk"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/grnrbt/yii2-beanstalk-task-manager/issues",
+    "source": "https://github.com/grnrbt/yii2-beanstalk-task-manager"
+  },
+  "authors": [
+    {
+      "name": "Viktor Pikaev",
+      "email": "viktor@greenrabbit.ru",
+      "homepage": "http://greenrabbit.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6",
+    "sergebezborodov/beanstalk-yii2": "dev-master",
+    "yiisoft/yii2": "~2.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-codeception": "*",
+    "codeception/codeception": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "grnrbt\\yii2\\beanstalkTaskManager": "src/"
+    }
+  }
+}
