@@ -2,9 +2,9 @@
 
 ## Installation
 
-1. Require composer package: `composer require grnrbt/yii2-beanstalk-task-manager "*"`
+Require composer package: `composer require grnrbt/yii2-beanstalk-task-manager "*"`
 
-2. Add components to your `/config/config.php` file:
+Add components to your `/config/config.php` file:
 ```php
 <?php
 return [
@@ -21,7 +21,7 @@ return [
 ];
 ```
 
-3. Add worker config file (`/config/worker.php`):
+Add worker config file (`/config/worker.php`):
 ```php
 <?php
 return \yii\helpers\ArrayHelper::merge(require (__DIR__.'/config.php'),[
@@ -46,7 +46,7 @@ return \yii\helpers\ArrayHelper::merge(require (__DIR__.'/config.php'),[
 ]);
 ```
 
-4. Add worker executed file (`/worker.php`):
+Add worker executed file (`/worker.php`):
 ```php
 <?php
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
@@ -60,10 +60,10 @@ $application = new \sergebezborodov\beanstalk\Application($config);
 return $application->run();
 ```
 
-5. Run worker application:
+Run worker application:
 ```
 $ cd app-directory
 $ php ./worker.php
 ```
 
-6. Enjoy.
+Enjoy.

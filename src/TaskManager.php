@@ -167,7 +167,7 @@ class TaskManager extends Component
      */
     private function sendTaskToBeanstalk(Task $task, $delay, $priority)
     {
-        $this->beanstalkComponent->addJob($this->tubeName, $task, null, $delay, $priority);
+        $this->beanstalkComponent->addJob($this->tubeName, $task, null, $priority, $delay);
     }
 
     private function sendOrderToBeanstalk()
